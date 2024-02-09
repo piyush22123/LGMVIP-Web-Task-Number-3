@@ -1,0 +1,318 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Ubuntu';
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(251, 251, 251);
+  border-bottom: 1px solid rgb(184, 183, 183);
+  box-shadow: 0px 0px 8px black;
+  position: fixed;
+  z-index: 10;
+}
+
+nav .logo {
+  padding-left: 15px;
+  color: purple;
+}
+
+nav .nav-1 {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-weight: 100;
+  color: rgb(149, 44, 247);
+  cursor: pointer;
+}
+nav .nav-1 p:hover {
+  color: rgb(65, 3, 122);
+}
+
+nav .nav-2 {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-2 input {
+  width: 200px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid rgb(154, 152, 152);
+}
+
+.nav-2 button {
+  height: 30px;
+  border-radius: 2px;
+  background-color: rgb(2, 243, 2);
+  border: 1.5px solid rgb(1, 92, 1);
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.container {
+  width: 100%;
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  position: relative;
+}
+
+.container .register {
+  width: 50%;
+  height: 93vh;
+  border-right: 10px dotted rgb(127, 2, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.register > h1 {
+  width: 90vh;
+  margin-top: 13px;
+  text-align: center;
+  text-decoration: underline blueviolet;
+  font-size: 28px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  width: 250px;
+  height: 32px;
+  padding: 5px;
+}
+
+form button {
+  height: 32px;
+  padding: 5px;
+  width: 100px;
+  background-color: transparent;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: rgb(225, 2, 218);
+  color: white;
+}
+
+form .gender input {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+}
+
+form .skills .items {
+  display: flex;
+}
+
+form .skills input {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+}
+
+form .skills .items input {
+  margin: 5px;
+}
+
+form .skills .items label {
+  margin-right: 10px;
+}
+
+.container .userdata {
+  width: 50%;
+  height: 81vh;
+  padding: 20px;
+  position: relative;
+  overflow: scroll;
+}
+
+.userdata > h1 {
+  text-align: center;
+  /* border-bottom: 3px solid rgb(127, 2, 252); */
+  text-decoration: underline blueviolet;
+  font-size: 28px;
+  padding: 5px;
+  margin: 0 40px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #838282;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 450px;
+  max-height: 300px;
+  background-color: #fff;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 4px rgb(106, 106, 106);
+}
+
+.card p {
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.section1 {
+  flex: 1;
+  border-right: 1px solid rgb(111, 111, 111);
+}
+
+.section2 {
+  width: 120px;
+  position: relative;
+}
+
+.section1 h2 {
+  margin-bottom: 15px;
+  background-color: green;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.section2 h2 {
+  background-color: green;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive display */
+@media only screen and (max-width: 780px) {
+
+  nav .logo {
+    padding-left: 15px;
+    margin-right: 15px;
+  }
+  
+  nav .nav-1 {
+    gap: 30px;
+  }
+  
+  nav .nav-2 {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .nav-2 input {
+    display: none;
+  }
+  
+  .nav-2 button {
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .container .register {
+    width: 100%;
+    height: 93vh;
+    border-right: none;
+    padding: 20px;
+  }
+  
+  .register > h1 {
+    margin-top: 0px;
+    border-bottom: none;
+    border-bottom: 3px solid rgb(127, 2, 252);
+    text-decoration: none;
+  }
+
+  
+  form .skills input {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+  }
+  
+  .container .userdata {
+    width: 100%;
+    height: 81vh;
+    padding: 20px;
+    position: relative;
+    overflow: scroll;
+  }
+  
+  .userdata > h1 {
+    text-align: center;
+    border-bottom: 3px solid rgb(127, 2, 252);
+    text-decoration: none;
+    font-size: 28px;
+    padding: 5px;
+    margin: 0 0px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    min-width: 450px;
+    min-height: 180px;
+    margin-left: 0px;
+}
+
+  img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+  }
+  
+  
+  
+  
+}
