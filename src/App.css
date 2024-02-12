@@ -101,7 +101,6 @@ nav .nav-2 {
   height: 32px;
   padding: 5px;
 }
-
 form button {
   height: 32px;
   padding: 5px;
@@ -111,10 +110,15 @@ form button {
   border-radius: 4px;
   font-size: 16px;
   margin-top: 10px;
+  margin-right: 40px;
 }
 
-form button:hover {
-  background-color: rgb(225, 2, 218);
+form button:nth-child(1):hover {
+  background-color: rgb(191, 2, 225);
+  color: white;
+}
+form button:nth-child(2):hover {
+  background-color: rgb(255, 0, 0);
   color: white;
 }
 

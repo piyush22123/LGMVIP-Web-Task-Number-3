@@ -85,7 +85,12 @@ const Form = (props) => {
           </div>
         </div>
 
+        <div className="buttons">
         <button type="submit">Submit</button>
+        <button onClick={()=>{
+            location.reload();
+        }}>Clear All</button>
+        </div>
       </form>
     </>
   );
